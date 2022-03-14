@@ -1,0 +1,31 @@
+    {posts?.length === 0 ? (
+        <div>Loading</div>
+      ) : (
+        posts?.map((post) => (
+          <div>
+          <h2>
+             {post.name}:
+             {/* <br> */}
+             {post.body}
+          </h2>
+          <span>
+          <h4>
+            {/* {post.body} */}
+          </h4>
+          </span>
+        </div>
+        ))
+        )}
+         
+
+         //   const [todos, setTodos] = useState([]);
+//   const url = "https://jsonplaceholder.typicode.com/users/"
+//   useEffect(() => {
+//   const fetchTodos = async () => {
+//     const res = await fetch(url);
+//     const data = await res.json();
+//     setTodos(data);
+//   };
+
+//   fetchTodos();
+// }, []);
